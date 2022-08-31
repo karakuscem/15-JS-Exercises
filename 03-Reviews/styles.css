@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap');
+
+:root {
+    font-size: 1.2rem;
+    --first-font-family: 'Bebas Neue', cursive;
+    --second-font-family: 'Quicksand', sans-serif;
+    --main-color: rgb(52, 158, 228);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .8fr .5fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--first-font-family);
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.underline{
+    margin-top: 20px;
+    width: 100px;
+    border-radius: 10px;
+    border-bottom: 5px solid var(--main-color);
+}
+
+.mainPart{
+    width: 30vw;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    gap: 20px;
+    padding: 40px;
+    border: none;
+    border-radius: 50px;
+}
+
+img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--first-font-family);
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.job {
+    color: var(--main-color);
+}
+
+.cv {
+    font-family: var(--second-font-family);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.leftRight {
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    border: none;
+    color: var(--main-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#surprise {
+    border: none;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(14, 57, 85);
+    color: white;
+    font-size: .8rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
